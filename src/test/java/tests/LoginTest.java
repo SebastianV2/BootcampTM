@@ -2,6 +2,7 @@ package tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.HomePage;
 import pages.LoginPage;
 import utils.Constants;
 
@@ -10,8 +11,9 @@ public class LoginTest extends BaseTest{
     @Test
     public void loginWithValidCredentials() {
         LoginPage loginPage = new LoginPage(driver);
+        HomePage homePage = new HomePage(driver);
         loginPage.login(Constants.Admin.toString(), Constants.admin123.toString());
-        Assert.assertTrue(loginPage.isOnHomePage());
+        Assert.assertTrue(homePage.isOnHomePage());
     }
     @Test
     public void loginWithWrongCredentials() {

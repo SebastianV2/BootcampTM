@@ -4,6 +4,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
+import pages.HomePage;
 import pages.LoginPage;
 import utils.Constants;
 
@@ -14,6 +15,7 @@ public class LoginStepDefinition {
     private String url = Hooks.url;
 
     LoginPage loginPage = new LoginPage(driver);
+    HomePage homePage = new HomePage(driver);
 
     @Given("the user navigates to OrangeHRM")
     public void theUserNavigatesToOrangeHRM() {
@@ -31,7 +33,7 @@ public class LoginStepDefinition {
     }
     @Then("he should see the homepage")
     public void heShouldSeeTheHomepage() {
-        loginPage.isOnHomePage();
+        homePage.isOnHomePage();
     }
 
     @When("he fills username and password with wrong credentials")

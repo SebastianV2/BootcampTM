@@ -1,6 +1,6 @@
 Feature: Review and edit an employee personal information
 
-  Background: The user login into the page
+  Background: The user must be logged in
     Given the user is on OrangeHRM homepage
     When he selects My info option
 

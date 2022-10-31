@@ -6,22 +6,18 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BasePage{
 
+    HomePage homePage = new HomePage(driver);
+
     @FindBy(name = "username")
     public WebElement usernameField;
     @FindBy(name = "password")
     public WebElement passwordField;
     @FindBy(xpath = "//button")
     public WebElement loginButton;
-    @FindBy(xpath = "//img[@alt='profile picture']")
-    public WebElement profilePicture;
     @FindBy(xpath = "//p[text()='Invalid credentials']")
     public WebElement errorLabel;
     @FindBy(xpath = "//span[text()='Required']")
     public WebElement requiredLabel;
-    @FindBy(xpath = "//span[contains(@class, 'userdropdown')]")
-    public WebElement userDropdown;
-    @FindBy(xpath = "//a[text()='Logout']")
-    public WebElement optLogout;
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -42,13 +38,10 @@ public class LoginPage extends BasePage{
     }
 
     public void logout(){
-        userDropdown.click();
-        optLogout.click();
+        homePage.userDropdown.click();
+        homePage.optLogout.click();
     }
 
-    public Boolean isOnHomePage() {
-        return profilePicture.isDisplayed();
-    }
     public Boolean wrongCredentials() { return errorLabel.isDisplayed(); }
     public Boolean emptyCredentials() { return requiredLabel.isDisplayed(); }
     public Boolean loginButton() { return loginButton.isDisplayed(); }
