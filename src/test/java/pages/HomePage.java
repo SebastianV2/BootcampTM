@@ -26,16 +26,20 @@ public class HomePage extends BasePage{
         return driver.findElement(By.xpath("//span[text()='"+ opt +"']"));
     }
 
-    public void directory(){
+    public void selectDirectory(){
         click(menuOption("Directory"));
     }
 
-    public void maintenance(){
+    public void selectMaintenance(){
         click(menuOption("Maintenance"));
     }
 
-    public void myInfo(){
+    public void selectMyInfo(){
         click(menuOption("My Info"));
+    }
+
+    public void selectAdmin(){
+        click(menuOption("Admin"));
     }
 
     public void selectAboutOption(){

@@ -17,7 +17,7 @@ public class MyInfoStepDefinition {
     @Given("he selects My info option")
     public void heSelectsMyInfoOption() {
         HomePage homePage = new HomePage(driver);
-        homePage.myInfo();
+        homePage.selectMyInfo();
     }
 
     @When("he reviews his personal information in the page")

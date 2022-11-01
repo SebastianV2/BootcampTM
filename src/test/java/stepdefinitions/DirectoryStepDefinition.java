@@ -16,7 +16,7 @@ public class DirectoryStepDefinition {
     @Given("he selects Directory option")
     public void heSelectsDirectoryOption() {
         HomePage homePage = new HomePage(driver);
-        homePage.directory();
+        homePage.selectDirectory();
     }
 
     @When("he searches for an employees name")

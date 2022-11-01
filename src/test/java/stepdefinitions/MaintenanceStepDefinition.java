@@ -17,7 +17,7 @@ public class MaintenanceStepDefinition {
     @Given("he selects Maintenance option")
     public void heSelectsMaintenanceOption() {
         HomePage homePage = new HomePage(driver);
-        homePage.maintenance();
+        homePage.selectMaintenance();
     }
 
     @When("he enters the password and searches an employee data")

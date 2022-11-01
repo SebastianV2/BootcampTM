@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e9eb956-44cd-4898-9d54-37e313a6a455" name="Changes" comment="First Commit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/HomeRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/HomeStepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Home.feature" afterDir="false" />
+    <list default="true" id="1e9eb956-44cd-4898-9d54-37e313a6a455" name="Changes" comment="Added Home scenarios and made some improvements">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/AdminPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runners/AdminRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/AdminStepDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Admin.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/LoginStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/LoginStepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/MyInfo.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/MyInfo.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/DirectoryStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/DirectoryStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/MaintenanceStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/MaintenanceStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/MyInfoStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/MyInfoStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Constants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +59,26 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.HomeRunner">
+  <component name="RunManager" selected="TestNG.AdminRunner">
+    <configuration name="Feature: Admin" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Admin.feature" />
+      <option name="GLUE" value="stepdefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Practice" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: Admin" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Add new Emergency contact" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MyInfo.feature" />
@@ -79,7 +99,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DirectoryRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AdminRunner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -88,7 +108,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="runners" />
-      <option name="MAIN_CLASS_NAME" value="runners.DirectoryRunner" />
+      <option name="MAIN_CLASS_NAME" value="runners.AdminRunner" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -106,23 +126,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="runners" />
       <option name="MAIN_CLASS_NAME" value="runners.HomeRunner" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MaintenanceRunner" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="runners.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="runners" />
-      <option name="MAIN_CLASS_NAME" value="runners.MaintenanceRunner" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -149,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AdminRunner" />
+        <item itemvalue="Cucumber Java.Feature: Admin" />
         <item itemvalue="TestNG.HomeRunner" />
         <item itemvalue="TestNG.MyInfoRunner" />
         <item itemvalue="Cucumber Java.Scenario: Add new Emergency contact" />
-        <item itemvalue="TestNG.MaintenanceRunner" />
-        <item itemvalue="TestNG.DirectoryRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667207297593</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Home scenarios and made some improvements">
+      <created>1667251705278</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667251705278</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,6 +199,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+    <MESSAGE value="Added Home scenarios and made some improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Home scenarios and made some improvements" />
   </component>
 </project>
