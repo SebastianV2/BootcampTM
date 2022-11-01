@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e9eb956-44cd-4898-9d54-37e313a6a455" name="Changes" comment="Added Admin scenarios">
-      <change afterPath="$PROJECT_DIR$/src/test/java/models/UserBuilderModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/models/UserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/PimPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/PimRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/PimStepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/Builder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Pim.feature" afterDir="false" />
+    <list default="true" id="1e9eb956-44cd-4898-9d54-37e313a6a455" name="Changes" comment="Added PIM scenarios and implement builder pattern to create data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/AdminStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/AdminStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PimPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PimPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/PimStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/PimStepDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Directory.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Directory.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Pim.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Pim.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667282589081</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added PIM scenarios and implement builder pattern to create data">
+      <created>1667291862483</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667291862483</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,6 +207,7 @@
     <MESSAGE value="First Commit" />
     <MESSAGE value="Added Home scenarios and made some improvements" />
     <MESSAGE value="Added Admin scenarios" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Admin scenarios" />
+    <MESSAGE value="Added PIM scenarios and implement builder pattern to create data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added PIM scenarios and implement builder pattern to create data" />
   </component>
 </project>

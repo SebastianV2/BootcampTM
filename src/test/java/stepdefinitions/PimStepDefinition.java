@@ -26,6 +26,21 @@ public class PimStepDefinition {
         pimPage.createUserWithEmptyName();
     }
 
+    @When("he searches an employee for his Id number")
+    public void heSearchesAnEmployeeForHisIdNumber() {
+        pimPage.searchForEmployeeId("0038");
+    }
+
+    @When("he searches for a report by name")
+    public void heSearchesForAReportByName() {
+        pimPage.searchReport();
+    }
+
+    @When("he edits the name of an employee")
+    public void heEditsTheNameOfAnEmployee() {
+        pimPage.editEmployeeName();
+    }
+
     @Then("he should see all the info of the new user")
     public void heShouldSeeAllTheInfoOfTheAdmin() {
         pimPage.personalDetailsLabelIsDisplayed();
@@ -34,6 +49,21 @@ public class PimStepDefinition {
     @Then("he should see the required field label")
     public void heShouldSeeTheRequiredFieldLabel() {
         pimPage.emptyNameLabelIsDisplayed();
+    }
+
+    @Then("he should see the info of the employee")
+    public void heShouldSeeTheInfoOfTheEmployee() {
+        pimPage.getJobTitle();
+    }
+
+    @Then("he should see the desired report")
+    public void heShouldSeeTheDesiredReport() {
+        pimPage.getSearchResults();
+    }
+
+    @Then("he should see the new employees name")
+    public void heShouldSeeTheNewEmployeesName() {
+        pimPage.checkName();
     }
 
 }
