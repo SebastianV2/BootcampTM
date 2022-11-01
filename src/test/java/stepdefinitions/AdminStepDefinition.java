@@ -27,7 +27,7 @@ public class AdminStepDefinition {
 
     @When("he searches an Admin by employee name")
     public void heSearchesAnAdminByEmployeeName() {
-        adminPage.searchAdminByEmployeeName(Constants.Alice.name());
+        adminPage.searchAdminByEmployeeName(Constants.Garry.name());
     }
 
     @Then("he should see all the info of the admin")

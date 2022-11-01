@@ -1,7 +1,7 @@
 Feature: Login on OrangeHRM page
 
   @Smoke @Functional
-  Scenario: : Login
+  Scenario: Login
     Given the user navigates to OrangeHRM
     When he fills username and password
     Then he should see the homepage
