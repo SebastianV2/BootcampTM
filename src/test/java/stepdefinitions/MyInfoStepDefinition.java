@@ -32,7 +32,7 @@ public class MyInfoStepDefinition {
 
     @When("he adds a new emergency contact")
     public void heAddsANewEmergencyContact() {
-        myInfoPage.addEmergencyContact(Constants.Sebas.name(), Constants.Cousin.name(), "3153134278");
+        myInfoPage.addEmergencyContact(Constants.Laura.name(), Constants.Sister.name(), "3153134279");
     }
 
     @Then("he should see the new contact in the list")

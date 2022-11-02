@@ -3,7 +3,6 @@ package models;
 public class UserModel {
 
     private String firstName;
-    private String employeeId;
     private String lastName;
     private String userName;
     private String password;
@@ -14,14 +13,6 @@ public class UserModel {
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
-    }
-
-    public String getEmployeeId() {
-        return employeeId;
-    }
-
-    public void setEmployeeId(String employeeId) {
-        this.employeeId = employeeId;
     }
 
     public String getLastName() {

@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e9eb956-44cd-4898-9d54-37e313a6a455" name="Changes" comment="Added PIM scenarios and implement builder pattern to create data">
+    <list default="true" id="1e9eb956-44cd-4898-9d54-37e313a6a455" name="Changes" comment="Added the last PIM scenarios">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/cucumber.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PimPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PimPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/PimStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/PimStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/UserBuilderModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/UserBuilderModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/UserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/MyInfoStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/MyInfoStepDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Pim.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Pim.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,26 +58,7 @@
   }
 }</component>
   <component name="RunManager" selected="TestNG.PimRunner">
-    <configuration name="Feature: Admin" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Admin.feature" />
-      <option name="GLUE" value="stepdefinitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="Practice" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Admin" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AdminRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DirectoryRunner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -83,7 +67,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="runners" />
-      <option name="MAIN_CLASS_NAME" value="runners.AdminRunner" />
+      <option name="MAIN_CLASS_NAME" value="runners.DirectoryRunner" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -101,6 +85,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="runners" />
       <option name="MAIN_CLASS_NAME" value="runners.HomeRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaintenanceRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.MaintenanceRunner" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -145,10 +146,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.PimRunner" />
-        <item itemvalue="TestNG.AdminRunner" />
-        <item itemvalue="Cucumber Java.Feature: Admin" />
-        <item itemvalue="TestNG.HomeRunner" />
         <item itemvalue="TestNG.MyInfoRunner" />
+        <item itemvalue="TestNG.MaintenanceRunner" />
+        <item itemvalue="TestNG.HomeRunner" />
+        <item itemvalue="TestNG.DirectoryRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667291862483</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added the last PIM scenarios">
+      <created>1667296635832</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667296635832</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,6 +216,7 @@
     <MESSAGE value="Added Home scenarios and made some improvements" />
     <MESSAGE value="Added Admin scenarios" />
     <MESSAGE value="Added PIM scenarios and implement builder pattern to create data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added PIM scenarios and implement builder pattern to create data" />
+    <MESSAGE value="Added the last PIM scenarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the last PIM scenarios" />
   </component>
 </project>

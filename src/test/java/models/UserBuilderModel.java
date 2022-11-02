@@ -17,11 +17,6 @@ public class UserBuilderModel {
         return this;
     }
 
-    public UserBuilderModel withEmployeeId(String employeeId) {
-        this.userModel.setEmployeeId(employeeId);
-        return this;
-    }
-
     public UserBuilderModel withLastName(String lastName) {
         this.userModel.setLastName(lastName);
         return this;
