@@ -14,7 +14,7 @@ Feature: Review and edit an employee personal information
     When he adds a new emergency contact
     Then he should see the new contact in the list
 
-  @Functional
+  @Smoke1
   Scenario: Delete Emergency contact
     When he deletes an emergency contact
-    Then he should see the new contact in the list
+    Then he should not see any emergency contacts

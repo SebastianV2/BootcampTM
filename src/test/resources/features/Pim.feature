@@ -2,6 +2,7 @@ Feature: Transactions on PIM tab
 
   Background: The user must be logged in
     Given the user is on OrangeHRM homepage
+    When he selects PIM option
 
   @Functional
   Scenario: Create an user without login info

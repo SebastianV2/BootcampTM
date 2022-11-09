@@ -13,28 +13,28 @@ public class MyInfoPage extends BasePage{
     @FindBy(xpath = "//a[(text()='Emergency Contacts')]")
     public WebElement emergencyContactOpt;
 
-    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/div/button")
+    @FindBy(xpath = "//h6[text()='Assigned Emergency Contacts']/following-sibling::button")
     public WebElement addButton;
 
-    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div/div[1]/div/div[2]/input")
+    @FindBy(xpath = "//label[text()='Name']/parent::div/following-sibling::div/input")
     public WebElement name;
 
-    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div/div[2]/div/div[2]/input")
+    @FindBy(xpath = "//label[text()='Relationship']/parent::div/following-sibling::div/input")
     public WebElement relationship;
 
-    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[2]/div/div[2]/div/div[2]/input")
+    @FindBy(xpath = "//label[text()='Mobile']/parent::div/following-sibling::div/input")
     public WebElement mobile;
 
     @FindBy(xpath = "//button[(text()=' Save ')]")
     public WebElement saveBtn;
 
-    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[3]/div/div[2]/div/div/div[7]/div/button[1]")
+    @FindBy(xpath = "//i[@class='oxd-icon bi-trash']")
     public WebElement deleteBtn;
 
     @FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--label-danger orangehrm-button-margin']")
     public WebElement confirmDeleteBtn;
 
-    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[2]/div/span']")
+    @FindBy(xpath = "//span[text()='No Records Found']")
     public WebElement noRecordsLabel;
 
     public void getName(){

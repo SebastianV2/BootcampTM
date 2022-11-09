@@ -41,6 +41,9 @@ public class HomePage extends BasePage{
     public void selectAdmin(){
         click(menuOption("Admin"));
     }
+    public void selectPim(){
+        click(menuOption("PIM"));
+    }
 
     public void selectAboutOption(){
         click(userDropdown);

@@ -27,7 +27,7 @@ public class PimPage extends BasePage{
     public WebElement  lastName;
     @FindBy(css = "span[class='oxd-switch-input oxd-switch-input--active --label-right']")
     public WebElement  createDetails;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[3]/div/div[1]/div/div[2]/input")
+    @FindBy(xpath = "//label[text()='Username']/parent::div/following-sibling::div/input")
     public WebElement  username;
     @FindBy(css = "input[type='password']")
     public List<WebElement> password;
@@ -37,9 +37,9 @@ public class PimPage extends BasePage{
     public WebElement personalDetailsLabel;
     @FindBy(xpath = "//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message']")
     public WebElement requiredNameLabel;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[2]/div/div[2]/input")
+    @FindBy(xpath = "//label[text()='Employee Id']/parent::div/following-sibling::div/input")
     public WebElement employeeId;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div/div/div[5]/div")
+    @FindBy(xpath = "//div[text()='QA Engineer']")
     public WebElement jobTitle;
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement searchButton;
@@ -47,11 +47,11 @@ public class PimPage extends BasePage{
     public WebElement reportsOpt;
     @FindBy(xpath = "//a[text()='Employee List']")
     public WebElement employeeListOpt;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div[2]/div/span")
+    @FindBy(xpath = "//span[text()='(1) Record Found']")
     public WebElement searchResult;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div/div/div[9]/div/button[2]")
+    @FindBy(xpath = "//i[@class='oxd-icon bi-pencil-fill']")
     public WebElement editBtn;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div/div/div[3]/div")
+    @FindBy(xpath = "//div[contains(text(),'Fiona')]")
     public WebElement firstNameTable;
 
     public void createUserWithoutLoginInfo(){
@@ -108,7 +108,7 @@ public class PimPage extends BasePage{
     }
 
     public Boolean getJobTitle(){
-        return jobTitle.getText().equalsIgnoreCase("QA Lead");
+        return jobTitle.getText().equalsIgnoreCase("QA Enginner");
     }
 
     public Boolean personalDetailsLabelIsDisplayed(){

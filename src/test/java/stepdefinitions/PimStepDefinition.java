@@ -1,8 +1,10 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
+import pages.HomePage;
 import pages.PimPage;
 
 public class PimStepDefinition {
@@ -10,6 +12,12 @@ public class PimStepDefinition {
     private WebDriver driver = Hooks.driver;
 
     PimPage pimPage = new PimPage(driver);
+
+    @Given("he selects PIM option")
+    public void heSelectsMyInfoOption() {
+        HomePage homePage = new HomePage(driver);
+        homePage.selectPim();
+    }
 
     @When("he creates a basic user")
     public void heCreatesABasicUser() {
@@ -28,7 +36,7 @@ public class PimStepDefinition {
 
     @When("he searches an employee for his Id number")
     public void heSearchesAnEmployeeForHisIdNumber() {
-        pimPage.searchForEmployeeId("0038");
+        pimPage.searchForEmployeeId("0042");
     }
 
     @When("he searches for a report by name")
